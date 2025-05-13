@@ -49,6 +49,28 @@ body,
   color: #555;
 }
 
+.contact {
+  font-size: 2vw;       /* smaller text */
+  color: #111111;             /* lighter color */
+  text-align: center;      /* center under the grid */
+  margin-top: 1.5rem;      /* spacing above */
+  line-height: 1.4;        /* good readability */
+  padding-left: 2vw;
+  text-decoration: none;
+}
+
+.contact a {
+  color: inherit;          /* match the contact text color */
+  text-decoration: none; /* remove underline */
+}
+
+.contact:hover {
+  opacity: 50%;
+  transition: 1s;
+
+}
+
+
 /* preview bubble */
 #preview {
   position: fixed;
@@ -75,4 +97,29 @@ body,
   #preview img {
     max-width: 80vw;
   }
+
+  .grid {
+    /* stack items vertically */
+    flex-direction: column;
+    align-items: flex-start;  /* left-align the list */
+  }
+
+  .grid-item {
+    /* make each one full-width like a list entry */
+    width: 100%;
+    white-space: normal;      /* allow wrapping if it’s long */
+    padding: 0.5rem 0;        /* optional spacing between items */
+    border-bottom: 1px solid #ddd; /* optional separator */
+  }
+
+  .contact {
+    font-size: 4vw;       /* smaller text */
+    color: #111111;             /* lighter color */
+    text-align: left;      /* center under the grid */
+    margin-top: 1.5rem;      /* spacing above */
+    line-height: 1.4;        /* good readability */
+    padding-left: 8vw;
+    text-decoration: none;
+}
+
 }
